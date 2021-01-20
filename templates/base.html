@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}"/>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  </head>
+  <body>
+  <div class="topnav">
+      <a href="{{ url_for('login_company') }}">Login Company</a>
+      <a href="{{ url_for('login_customer') }}"> Login Customer</a>
+      <a href="{{ url_for('homepage_company') }}">Homepage Company</a>
+    </div>
+<div class="topheader">
+  <header>
+  <h1>Car Rental System</h1>
+</header>
+  </div>
+  {% block content %}{% endblock %}
+
+  <footer>
+      <small>&copy; 2015-2018, Kilgore Trout</small>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class="title" >Login Company</h1>
+
+    <form action="" method="post" name="movie_edit">
+      <div class="field">
+        <label for="title" class="label">Company name</label>
+        <div class="control">
+          <input type="text" name="title" class="input" required="required"/>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="title" class="label">Password</label>
+        <div class="control">
+          <input type="text" name="title" class="input" required="required"/>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary is-small">Login</button>
+        </div>
+      </div>
+    </form>
+{% endblock %}

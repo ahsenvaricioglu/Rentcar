@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="tile is-ancestor" xmlns="http://www.w3.org/1999/html">
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+        <p class="title">Add Car</p>
+        <label class="label">Model</label>
+        <input class="input" type="text" placeholder="Text input" >
+        <label class="label">Price</label>
+        <input class="input" type="text" placeholder="Text input">
+        <label class="label">Year</label>
+        <input class="input" type="text" placeholder="Text input">
+        <label class="label">Color</label>
+        <input class="input" type="text" placeholder="Text input">
+        <label class="label">Plate Number</label>
+        <input class="input" type="text" placeholder="Text input">
+        <div class="control">
+        <button class="button is-primary">Add</button>
+</div>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">Foo</p>
+      <p class="subtitle">Bar</p>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <p class="title">Third column</p>
+      <p class="subtitle">With some content</p>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+      </div>
+    </article>
+  </div>
+</div>
+
+
+{% endblock %}
